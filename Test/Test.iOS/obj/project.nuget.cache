@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dgSpecHash": "zUuS4vNRscldT8304CsJEia4JRFzWIx7gfd1xme86pPv2qaQFq0Wo227AVVktxiOa04VDY/8GRqBh0pSDQv0Uw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\a\\Desktop\\Test\\Test\\Test.iOS\\Test.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\a\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\a\\.nuget\\packages\\xamarin.communitytoolkit\\2.0.5\\xamarin.communitytoolkit.2.0.5.nupkg.sha512",
+    "C:\\Users\\a\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\a\\.nuget\\packages\\xamarin.forms\\5.0.0.2578\\xamarin.forms.5.0.0.2578.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://nuget.uxdivers.com/grial'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
+    }
+  ]
+}

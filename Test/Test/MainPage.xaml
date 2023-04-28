@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:views="http://xamarin.com/schemas/2020/toolkit"
+             x:Class="Test.MainPage">
+
+    <StackLayout>
+
+        <views:Expander HorizontalOptions="Start" VerticalOptions="Start" Margin="10,25,0,0">
+            <views:Expander.Header>
+                <Image Source="hamburger_black.png" >
+
+                    <Image.Triggers>
+                        <DataTrigger TargetType="Image"
+                                         Binding="{Binding Source={RelativeSource AncestorType={x:Type views:Expander}}, Path=IsExpanded}"
+                                         Value="True">
+                            <Setter Property="Source"
+                                        Value="black_close.png" />
+                        </DataTrigger>
+                    </Image.Triggers>
+
+
+                </Image>
+
+
+
+            </views:Expander.Header>
+
+            <StackLayout HorizontalOptions="Start" VerticalOptions="Start" >
+
+                <Button
+                    x:Name="btnSettings"
+                    BackgroundColor="#425563"
+            
+               
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    VerticalOptions="Start"
+                    
+                    Text="Button 1" />
+
+                <Button
+                    x:Name="btnClubContacts"
+                    BackgroundColor="#425563"
+                   
+                    VerticalOptions="CenterAndExpand"
+                    TextColor="White"
+                    FontSize="Micro"
+                    FontAttributes="Bold"
+                    
+                   
+                    Text="Button 2" />
+
+                <Button
+                        x:Name="btnLogin"
+                    BackgroundColor="#425563"
+             
+                   
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    Padding="20,0,20,0"
+                   
+                    Text="Button 3"></Button>
+
+
+                <Button
+                    x:Name="btnHome"
+                    BackgroundColor="#425563"
+                    FontFamily="GothamBold.otf"
+                   
+                    TextColor="White"
+                    FontAttributes="Bold"
+               
+                   
+                    Text="Button 4"></Button>
+
+            </StackLayout>
+        </views:Expander>
+
+
+    </StackLayout>
+
+</ContentPage>
